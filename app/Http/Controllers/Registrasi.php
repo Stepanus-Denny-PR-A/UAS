@@ -47,7 +47,7 @@ public function Login(Request $request)
 
 public function logout(){
     Auth::logout();
-    session_destroy();
+    session_abort();
     return redirect('/');
 }
 

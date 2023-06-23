@@ -6,22 +6,22 @@
     {{$data->Judul}}
     @endsection
     @section('Deskripsi')
-    {{$data->Deskripsi}}
+    Sinopsis:<br>{{$data->Deskripsi}}
     @endsection
     @section('Tahun')
-    {{$data->Tahun_Terbit}}
+    Terbit tahun: {{$data->Tahun_Terbit}}
     @endsection
     @section('Biaya_Pembuatan')
-    {{$data->Biaya_Pembuatan}}
+    Biaya Pembuatan:{{$data->Biaya_Pembuatan}}
     @endsection
     @section('Pendapatan')
-    {{$data->Pendapatan}}
+    Pendapatan: {{$data->Pendapatan}}
     @endsection
     @section('Sutradara')
-    {{$data->Sutradara}}
+    Sutradara: {{$data->Sutradara}}
     @endsection
     @section('Pemeran')
-    {{$data->Pemeran}}
+    Pemeran: {{$data->Pemeran}}
     @endsection
     @section('Tahun')
     {{$data->Tahun_Terbit}}

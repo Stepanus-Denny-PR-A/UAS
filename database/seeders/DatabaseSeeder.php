@@ -44,5 +44,29 @@ class DatabaseSeeder extends Seeder
             'password'=>Hash::make('12345')
         ]);
 
+        DB::table('Studio')->insert([
+            'Nama'=>'Twentieth Century Studios, Inc.',
+            'Gambar'=>'https://upload.wikimedia.org/wikipedia/id/thumb/5/5e/20th_Century_Studios.svg/220px-20th_Century_Studios.svg.png',
+            'Tahun_berdiri'=>'1935–2020',
+            'Deskripsi'=>'20th Century Studios adalah sebuah studio film yang beroperasi di Amerika Serikat. Studio ini didirikan pada tahun 1935 dengan nama 20th Century Pictures oleh seorang produser film bernama Joseph Schenck. Pada tahun 1935, perusahaan tersebut bergabung dengan Fox Film Corporation dan menjadi 20th Century-Fox. Studio ini menghasilkan banyak film yang sukses secara komersial dan kritis selama hampir delapan dekade.
+            20th Century Studios dikenal sebagai salah satu studio film terkemuka di Hollywood. Studio ini telah menghasilkan sejumlah film yang menjadi ikon budaya, termasuk "Gone with the Wind" (1939), "The Sound of Music" (1965), "Star Wars" (1977), dan "Titanic" (1997). Film-film tersebut tidak hanya mencapai kesuksesan komersial yang besar, tetapi juga mendapatkan pengakuan dari para kritikus dan penghargaan bergengsi seperti Academy Awards.
+            Seiring berjalannya waktu, 20th Century Studios mengalami beberapa perubahan kepemilikan. Pada tahun 2019, The Walt Disney Company mengakuisisi 21st Century Fox, termasuk 20th Century Fox, dan mengganti namanya menjadi 20th Century Studios. Meskipun berada di bawah naungan Disney, studio ini tetap mempertahankan identitasnya yang kuat dan terus menghasilkan film-film yang beragam dalam genre dan tema.
+            Sebagai salah satu studio film tertua di industri hiburan, 20th Century Studios telah menghadapi berbagai tantangan dan perubahan dalam perkembangannya. Namun, studio ini terus beradaptasi dengan perkembangan teknologi dan preferensi penonton, serta tetap menjadi pusat kreativitas untuk para sineas dan pembuat film yang ingin menghasilkan karya-karya berpengaruh.
+            Dengan sejarah panjangnya yang kaya dan kontribusinya terhadap perfilman, 20th Century Studios tetap menjadi salah satu studio film yang paling dihormati dan diakui di dunia.',
+            'Filemnya'=>'1. Avatar (2009) - Film fiksi ilmiah yang disutradarai oleh James Cameron dan menjadi salah satu film dengan pendapatan tertinggi sepanjang masa. Mengisahkan tentang petualangan seorang marinir paraplegik yang dikirim ke planet Pandora.
+
+            2. X-Men (2000) - Film superhero yang mengadaptasi komik Marvel dengan nama yang sama. Film ini menjadi awal dari seri film X-Men yang sukses dan membawa karakter-karakter mutan ikonik ke layar lebar.
+
+            3. The Greatest Showman (2017) - Film musikal biografi yang mengisahkan kehidupan P.T. Barnum, pendiri sirkus Barnum & Bailey Circus. Film ini dikenal dengan lagu-lagu yang populer seperti "This Is Me" dan "A Million Dreams".
+
+            4. Deadpool (2016) - Film superhero yang mengambil pendekatan yang lebih gelap dan dewasa, dengan bintang Ryan Reynolds sebagai karakter utama, Wade Wilson/Deadpool. Film ini mendapatkan sambutan positif dari kritikus dan sukses di box office.
+            '
+            ,'vidio'=>'https://youtu.be/0x9xXy5a0do'
+        ]);
+
+        DB::table('wishlist_table')->insert([
+            'id_user'=>'1',
+            'id_filem'=>'1'
+        ]);
 
     }}

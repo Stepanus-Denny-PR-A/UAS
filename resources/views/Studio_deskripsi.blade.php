@@ -55,9 +55,6 @@
 
       #comments .media img {
         max-width: 100px;
-        max-height: 100px;
-        margin-bottom: 10px;
-
       }
 
       #comments .media h4 {
@@ -107,20 +104,17 @@
     <div class="card mt-5 " >
         <div class="row g-3">
             <div class="col-md-3">
-                <img class="embed-responsive imgposter float-start" src= @yield('gambar')  alt="Gambar_poster">
+                <img class="embed-responsive imgposter float-start" src= {{ $data->Gambar }}  alt="Gambar_poster">
               </div>
           <div class="col-md-4 ">
-            <iframe  src= @yield('Trailer') frameborder="1" allowfullscreen></iframe>
+            <iframe  src= {{ $data->vidio }} frameborder="1" allowfullscreen></iframe>
           </div>
           <div class="col-md-12">
             <div class="card-body">
-              <h1 class="card-title">@yield('Judul')</h1>
-              <p class="card-text">Sinopsis:<br>@yield('Deskripsi')</p>
-              <p class="card-text">Biaya Pembuatan: @yield('Biaya_Pembuatan')</p>
-              <p class="card-text">Pendapatan: @yield('Pendapatan')</p>
-              <p class="card-text">Sutradara: @yield('Sutradara')</p>
-              <p class="card-text">Pemeran: @yield('Pemeran')</p>
-              <p class="card-text">Terbit tahun: @yield('Tahun')</p>
+              <h1 class="card-title">{{$data->Nama}}</h1>
+              <p class="card-text">Sinopsis:<br>{{$data->Deskripsi}}</p>
+              <p class="card-text">Filemnya:<br>{{$data->Filemnya}}</p>
+              <p class="card-text">tahun: {{$data->Tahun_berdiri}}</p>
               <a href="/main"><button class="btn btn-danger ">back</button></a>
           </div>
         </div>
@@ -130,21 +124,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-8">
-              <form action="/store" method="POST">
-                @csrf
-                <h3 class="pull-left">New Comment</h3>
-                <fieldset>
-                    <input type="hidden" name="id" value=@yield('id')>
-                  <div class="row">
-                    <div class="form-group col-xs-12 col-sm-9 col-lg-10">
-                      <textarea class="form-control" id="message" placeholder="Your message" name="isi" required=""></textarea>
-                      <button type="submit" class="btn btn-danger ">Submit</button>
-                    </div>
-                  </div>
-                </fieldset>
-              </form>
               <div>
-                @yield('komentar')
               </div>
             </div>
           </div>

@@ -1,8 +1,10 @@
 <?php
 use App\Http\Controllers\Registrasi;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Bagian_Deskripsi;
 use App\Http\Controllers\Halaman_Utama;
+use App\Http\Controllers\Bagian_Deskripsi;
+use App\Http\Controllers\StudioController;
+use App\Http\Controllers\wishlist_control;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +16,11 @@ use App\Http\Controllers\Halaman_Utama;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/wish{id}', [wishlist_control::class,'add']);
+
+Route::get('/del{id}', [wishlist_control::class,'hapus']);
+
+Route::post('/store', [Bagian_Deskripsi::class,'store']);
 
 Route::get('/', [Registrasi::class,'index']);
 
@@ -27,8 +34,14 @@ Route::get('/Main/logout',[Registrasi::class,'logout']);
 
 Route::get('/main', [Halaman_Utama::class,'ke_main']);
 
+Route::get('/Main/Studio', [StudioController::class,'index']);
+
+Route::get('/Studio{id}', [StudioController::class,'more']);
+
 Route::get('/{id}', [Bagian_Deskripsi::class,'index']);
 
-Route::post('/store', [Bagian_Deskripsi::class,'store']);
+Route::get('/Main/wishlist', [wishlist_control::class,'index']);
+
+
 
 

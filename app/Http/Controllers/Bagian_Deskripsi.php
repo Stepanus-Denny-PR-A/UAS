@@ -19,12 +19,8 @@ class Bagian_Deskripsi extends Controller
         foreach ($data as $dt) {
             if ($dt->id == $id) {
                 $dt->Trailer = str_replace("https://youtu.be/", "https://www.youtube.com/embed/", $dt->Trailer);
-                return view('deskripsi', ['data' => $dt,'coments'=>$komentar]);
-            }}
-
-
-
-    }
+                return view('deskripsi_filem', ['data' => $dt,'coments'=>$komentar]);
+            }}}
     /**
      * Store a newly created resource in storage.
      */
