@@ -28,6 +28,26 @@ class DatabaseSeeder extends Seeder
             'Sutradara'=>'James Cameron',
             'Pemeran'=>'Leonardo DiCaprio,Kate Winslet,Billy Zane,Kathy Bates,Gloria Stuart,Victor Garber'
         ]);
+        DB::table('Data-Filem')->insert([
+            'Judul'=>'Die Hard',
+            'Gambar'=>'https://upload.wikimedia.org/wikipedia/en/c/ca/Die_Hard_%281988_film%29_poster.jpg',
+            'Tahun_Terbit'=>'1988',
+            'Deskripsi'=>'Pada Malam Natal, Detektif John McClane dari Departemen Kepolisian Kota New York (NYPD) tiba di Los Angeles dengan harapan untuk berdamai dengan istrinya yang terpisah, Holly, dalam sebuah pesta yang diadakan oleh perusahaan tempatnya bekerja, Nakatomi Corporation. Dia dibawa ke Nakatomi Plaza oleh seorang sopir limosin, Argyle, yang menawarkan untuk menunggu McClane di garasi. Sementara McClane mengganti pakaiannya, menara tersebut direbut oleh radikal Jerman bernama Hans Gruber dan timnya yang bersenjata lengkap, termasuk Karl dan Theo. Semua orang di menara itu dijadikan sandera kecuali McClane, yang berhasil meloloskan diri, dan Argyle, yang tidak menyadari kejadian tersebut.
+
+            Gruber menyamar sebagai teroris untuk mencuri $640 juta dalam bentuk obligasi bearer yang tidak bisa dilacak di brankas gedung. Dia membunuh eksekutif Joseph Takagi setelah gagal mendapatkan kode akses darinya, dan memberikan tugas kepada Theo untuk membobol brankas tersebut. Para teroris mengetahui kehadiran McClane dan salah satunya, Tony, dikirim untuk mengejar McClane. McClane membunuh Tony dan mengambil senjata dan radio-nya, yang digunakan untuk menghubungi Departemen Kepolisian Los Angeles (LAPD) yang skeptis. Sersan Al Powell dikirim untuk menyelidiki. Sementara itu, McClane membunuh lebih banyak teroris dan mengambil tas mereka yang berisi C-4 dan detonator. Setelah tidak menemukan kejanggalan apa pun, Powell hampir meninggalkan tempat tersebut sampai McClane menjatuhkan jenazah seorang teroris ke mobilnya. Setelah Powell meminta bantuan, tim SWAT mencoba menyerbu gedung tetapi diserang oleh para teroris. McClane melemparkan beberapa C-4 ke dalam lubang lift, menyebabkan ledakan yang membunuh beberapa teroris dan mengakhiri serangan tersebut.
+
+            Rekan kerja Holly, Harry Ellis, mencoba bernegosiasi atas nama Gruber, tetapi ketika McClane menolak untuk menyerah, Gruber membunuh Ellis. Saat memeriksa bahan peledak di atap, Gruber bertemu dengan McClane dan berpura-pura menjadi sandera yang melarikan diri; McClane memberikan Gruber sebuah pistol. Gruber mencoba menembak McClane tetapi menemukan bahwa senjatanya tidak terisi, dan hanya diselamatkan oleh campur tangan teroris lainnya. McClane melarikan diri tetapi terluka oleh serpihan kaca dan kehilangan detonator. Di luar, agen Federal Bureau of Investigation (FBI) mengambil alih kendali. Mereka memerintahkan listrik dimatikan yang, seperti yang telah diduga oleh Gruber, melumpuhkan kunci brankas terakhir sehingga timnya bisa mengumpulkan obligasi tersebut.
+
+            FBI setuju dengan tuntutan Gruber untuk sebuah helikopter, dengan maksud mengirimkan helikopter serang untuk mengeliminasi kelompok tersebut. McClane menyadari bahwa Gruber berencana meledakkan atap untuk membunuh sandera dan memalsukan',
+            'Biaya_Pembuatan'=>'$$25–35 million',
+            'Pendapatan'=>'$139.8–141.5 million',
+            'Trailer'=>'https://youtu.be/jaJuwKCmJbY',
+            'Sutradara'=>'John McTiernan',
+            'Pemeran'=>'Bruce Willis
+            Alan Rickman
+            Alexander Godunov
+            Bonnie Bedelia'
+        ]);
         DB::table('Komentar')->insert([
             'ID_user'=>'1',
            'isi'=> 'bagus',

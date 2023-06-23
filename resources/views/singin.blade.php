@@ -1,7 +1,7 @@
 @extends('dasar.regrestrasi')
 
 @section('judul')
-    <h1 class="card-title text-center">Sign In</h1>
+    <h1 class="card-title text-center">Register</h1>
 @endsection
 
 @section('form')
